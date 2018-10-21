@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="list-item" wx:for="{{songData.data.playlist}}" wx:key='key'>
+    <text>歌曲名：{{songData.data.playlist[index].xsong_name}}</text>
+    <text>歌手：{{songData.data.playlist[index].xsinger_name}}</text>
+    <text class='list-item-textUrl'>歌曲地址：{{songData.data.playlist[index].xsong_url}}</text>
+  </view>
+</view>
